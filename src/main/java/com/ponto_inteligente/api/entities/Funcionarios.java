@@ -2,7 +2,7 @@ package com.ponto_inteligente.api.entities;
 
 import com.ponto_inteligente.api.enums.PerfilEnum;
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -15,6 +15,7 @@ import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 @Table( name = "funcionarios")
 public class Funcionarios implements Serializable {
     private static final long serialVersionUID = -57546207015712518L;
+    @Id
     private long Id;
     private String name;
     private String email;
